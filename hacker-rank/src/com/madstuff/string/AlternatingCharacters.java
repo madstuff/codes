@@ -30,6 +30,11 @@ public class AlternatingCharacters {
         return count;
     }
 
+    /**
+     *
+     * @param s
+     * @return
+     */
     private static int alternatingCharacters1(String s) {
         int count = 0;
         for (int i = 1; i < s.length(); i++) {
