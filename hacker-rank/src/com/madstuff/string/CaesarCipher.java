@@ -40,9 +40,7 @@ public class CaesarCipher {
         } else {
             return c;
         }
-
     }
-
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -52,6 +50,7 @@ public class CaesarCipher {
         String encryptedString = encrypt(string, k);
 
         System.out.println("Encrypted String : " + encryptedString);
+
     }
 
 }

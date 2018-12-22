@@ -11,7 +11,8 @@ import java.util.Scanner;
 public class AlternatingCharacters {
 
     /**
-     *
+     * Terminates due to timeout. But useful when you have to calculate the reduced
+     * string as well.
      * @param string
      * @return count of deleted characters.
      */
@@ -28,6 +29,17 @@ public class AlternatingCharacters {
         }
         return count;
     }
+
+    private static int alternatingCharacters1(String s) {
+        int count = 0;
+        for (int i = 1; i < s.length(); i++) {
+            if (s.charAt(i -1) == s.charAt(i))
+                count++;
+        }
+
+        return count;
+    }
+
 
 
     public static void main(String[] args) {
